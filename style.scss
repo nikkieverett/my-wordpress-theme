@@ -3,6 +3,7 @@
 @import 'variables';
 @import 'header';
 @import 'main-content';
+@import 'sidebar';
 
 $header-font: 'Lato', sans-serif;
 $secondary-color: rgba(237, 237, 238, 1.0);
@@ -20,25 +21,6 @@ $font-color: rgba(122, 122, 122, 1.0);
   max-width: 70%;
   //removed overflow in order to show dates on left
   // overflow: auto;
-}
-
-
-//----------------------------------------------NAV
-// see sidebar.php
-aside {
-  border: 2px solid green;
-  overflow: auto;
-}
-#sidebar {
-  float: right;
-  width: 34%;
-  background-color: yellow;
-}
-#primary {
-  color: green;
-}
-
-.xoxo {
 }
 
 

@@ -5,9 +5,10 @@
 #content {
   float: left;
   width:65%;
+
   //articles content
   article {
-    border-bottom: $secondary-color 2px solid;
+    border-bottom: $secondary-color 1px solid;
     color: $font-color;
     font-family: $header-font;
     line-height: 1.8em;
@@ -43,7 +44,7 @@
           display:none;
         }
         .entry-date {
-          border: $secondary-color 2px solid;
+          border: $secondary-color 1px solid;
           border-radius: 100px;
           color: black;
           font-size: 1.1em;

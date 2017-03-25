@@ -3,7 +3,7 @@
   <?php if ( have_posts() ) : ?>
     <header class="header">
       <h1 class="entry-title">
-        <?php printf( __( 'Search Results for: %s', 'blankslate' ), get_search_query() ); ?>
+        <?php printf( __(), get_search_query() ); ?>
       </h1>
     </header>
     <?php while ( have_posts() ) : the_post(); ?>

@@ -1,0 +1,68 @@
+//-------------------------------------------SEARCH
+// found in wp-includes/widgets.php file
+// see class-wp-widget-search.php
+
+//removes "search for:" text
+label {
+  display: none;
+}
+//search bar settings
+input#s {
+  border: 1px solid $secondary-color;
+  height: 27px;
+  margin-right: 10px;
+  width: 120px;
+}
+//submit button settings
+input#searchsubmit {
+  background-color: $secondary-color;
+  border-radius: 0px;
+  border: none;
+  font-family: $header-font;
+  font-size: .8em;
+  height: 30px;
+  letter-spacing: .5em;
+  text-transform: uppercase;
+  width: 100px;
+}
+//----------------------------------------------NAV
+// see sidebar.php
+
+//container for both search and navigation
+aside {
+  float: right;
+  font-family: $header-font;
+  font-weight: 300;
+  margin-left: 5%;
+  margin-top: 5.5em;
+  overflow: auto;
+  text-transform: uppercase;
+  width: 30%;
+
+  //sidebar headers
+  h3 {
+    font-size: 2em;
+    margin-top: 50px;
+  }
+}
+//sidebar page navigation
+#sidebar {
+  .xoxo ul {
+    border-top: $secondary-color 1px solid;
+    margin-top: 15px;
+    padding-bottom: 10px;
+
+    li {
+      border-bottom: $secondary-color 1px solid;
+      font-size: .9em;
+      padding-bottom: 15px;
+      padding-top: 15px;
+
+      a {
+        background-color: $secondary-color;
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
