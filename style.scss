@@ -2,88 +2,28 @@
 @import 'reset';
 @import 'variables';
 @import 'header';
+@import 'main-content';
 
 $header-font: 'Lato', sans-serif;
 $secondary-color: rgba(237, 237, 238, 1.0);
+$font-color: rgba(122, 122, 122, 1.0);
 
 //-----------------------------WHOLE PAGE CONTAINER
 //found in header.php --> class hfeed
 #wrapper {
-  max-width: 90%;
   margin: 0 auto ;
-
+  width: 100%;
 }
 //NAV AND MAIN CONTENT CONTAINER
 #container {
-  width: 960px;
-  margin: 40px auto 20px auto;
-  // border: black 2px solid;
-  overflow: auto;
+  margin: 0 auto;
+  max-width: 70%;
+  //removed overflow in order to show dates on left
+  // overflow: auto;
 }
 
-//MAIN CONTENT RIGHT COLUMN
-//found in index.php
-//cotainer for all articles and their content
-#content {
-  // border: orange 2px solid;
-  float: left;
-  width:65%;
 
-  //individual articles
-  article {
-    // border: red 2px solid;
-
-    header {
-      border: 2px solid blue;
-      font-family: $header-font;
-
-      .entry-title a {
-        text-transform: uppercase;
-        font-size: 3em;
-        text-align: center;
-        font-weight: 300;
-        letter-spacing: .3em;
-        text-align: left;
-        text-decoration: none;
-        color: black;
-      }
-      //see entry-meta.php
-      .entry-meta {
-        // background-color: yellow;
-        .meta-sep {
-          display: none;
-        }
-        .author {
-          display:none;
-        }
-        .entry-date {
-          background-color: yellow;
-          height: 75px;
-          width: 75px;
-          border-radius: 100px;
-          border: $secondary-color 2px solid;
-        }
-      }
-    }
-    //see entry-summary.php
-    .entry-summary {
-
-    }
-    //see entry-footer.php
-    .entry-footer {
-      // background-color: green;
-
-    }
-  }
-}
-//----------unknown links --------------------------
-//see entry-content.php
-// .entry-content {}
-//.vcard {}
-//.entry-links {}
-
-
-//NAV
+//----------------------------------------------NAV
 // see sidebar.php
 aside {
   border: 2px solid green;
@@ -122,7 +62,7 @@ aside {
 #comments {
 
 }
-//see nav-below-single.php
+//see nav-below-single.php and nav-below.php
 #nav-below {
   outline: 2px red solid;
 

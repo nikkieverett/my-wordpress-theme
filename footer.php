@@ -8,8 +8,4 @@
     </div>
     <?php wp_footer(); ?>
   </body>
-  <head>
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="-1">
-  </head>
 </html>

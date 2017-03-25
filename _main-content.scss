@@ -1,0 +1,86 @@
+//MAIN CONTENT LEFT COLUMN
+//found in 404, author, archive, attatchment, category, entry, page, search, single, tag, index files
+
+//cotainer for all articles and their content
+#content {
+  float: left;
+  width:65%;
+  //articles content
+  article {
+    border-bottom: $secondary-color 2px solid;
+    color: $font-color;
+    font-family: $header-font;
+    line-height: 1.8em;
+    padding-bottom: 50px;
+    text-align: justify;
+
+    header {
+      clear: both;
+      font-family: $header-font;
+      margin-bottom: 3em;
+      margin-top: 5em;
+      position: relative;
+      width: 80%;
+
+      .entry-title a {
+        color: black;
+        font-size: 3em;
+        font-weight: 300;
+        line-height: 1em;
+        letter-spacing: .09em;
+        margin-top: 4em;
+        text-transform: uppercase;
+        text-align: center;
+        text-align: left;
+        text-decoration: none;
+      }
+      //see entry-meta.php
+      .entry-meta {
+        .meta-sep {
+          display: none;
+        }
+        .author {
+          display:none;
+        }
+        .entry-date {
+          border: $secondary-color 2px solid;
+          border-radius: 100px;
+          color: black;
+          font-size: 1.1em;
+          height: 50px;
+          left: -100px;
+          line-height: 1.1em;
+          padding-top: 10px;
+          position: absolute;
+          text-align: center;
+          text-transform: uppercase;
+          top: 5px;
+          width: 60px;
+        }
+      }
+    }
+    //see entry-footer.php
+    .entry-footer a{
+      background-color: $secondary-color;
+      color: black;
+      margin-top: 70px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .cat-links a{
+      float: left;
+    }
+    .comments-link a{
+      float: right;
+    }
+  }
+}
+//----------unknown links --------------------------
+//see entry-content.php
+  //.entry-content {}
+  //.entry-links {}
+
+//.vcard {}
+//see entry-summary.php
+  //.entry-summary {}
+  //.entry-links{}

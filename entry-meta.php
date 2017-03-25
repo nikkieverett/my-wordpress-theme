@@ -4,6 +4,6 @@
   </span>
   <span class="meta-sep"> | </span>
   <span class="entry-date">
-    <?php the_time( get_option( 'date_format' ) ); ?>
+    <?php the_time( 'M d' ); ?>
   </span>
 </section>

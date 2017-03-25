@@ -2,74 +2,59 @@
 //found in header.php
 //container for all header info
 #header {
-  overflow: auto;
-  width: 85%;
   margin: 0 auto;
-  // outline: green 2px solid;
+  max-width: 70%;
+  overflow: auto;
 
-}
-//contains both site title and site description if there is one
+  //contains both site title and site description if there is one
   #branding {
-    margin-top: 70px;
-    margin-bottom: 70px;
     font-family: $header-font;
-  }
+    margin-bottom: 70px;
+    margin-top: 70px;
+
     #site-title {
-      text-transform: uppercase;
       font-size: 3em;
-      text-align: center;
       font-weight: 300;
       letter-spacing: .4em;
+      text-align: center;
+      text-transform: uppercase;
     }
     #site-title a {
-      text-decoration: none;
       color: black;
+      text-decoration: none;
     }
     #site-title a:hover {
 
     }
     //sub-title or tagline
     #site-description {
-      text-transform: uppercase;
       font-size: 2em;
-      text-align: center;
       font-weight: 300;
       letter-spacing: .5em;
-
+      text-align: center;
+      text-transform: uppercase;
     }
-//page navigation and search bar
-#menu a{
-  border-left: $secondary-color solid 2px;
-  border-right: $secondary-color solid 2px;
-  color: black;
-  float: left;
-  font-family: $header-font;
-  font-size: 1.3em;
-  letter-spacing: .4em;
-  margin-left: 20px;
-  // outline: green 2px solid;
-  padding: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-
-}
-//removed search bar for asthetic reasons
-//code below will add search bar back when pasted below <nav id="menu" role="navigation">
-// see line 28
-//<div id="search">
-  //<?php get_search_form(); ?>
-//</div>
-  #search {
   }
-//created my own search bar.. not functional
-.search-bar {
-  background-color: $secondary-color;
-  border-radius: 5px;
-  font-family: $header-font;
-  letter-spacing: .4em;
-  margin-left: 20px;
-  margin-bottom: 30px;
-  padding: 5px;
-  text-transform: uppercase;;
-  width: 300px;
+  //page navigation and search bar
+  #menu a{
+    border-left: $secondary-color solid 2px;
+    border-right: $secondary-color solid 2px;
+    color: black;
+    float: left;
+    font-family: $header-font;
+    font-size: 1.3em;
+    letter-spacing: .4em;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  //removed search bar for asthetic reasons
+  //code below will add search bar back when pasted below <nav id="menu" role="navigation">
+  // see line 28
+  //<div id="search">
+    //<?php get_search_form(); ?>
+  //</div>
+  #search {
+
+  }
 }
