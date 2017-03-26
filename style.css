@@ -227,5 +227,21 @@ aside {
   margin: 0 auto;
   max-width: 70%; }
 
+#comments {
+  outline: green 2px solid; }
+  #comments #comments-list {
+    color: red; }
+    #comments #comments-list .comments-title {
+      font-size: 3em; }
+    #comments #comments-list ul {
+      background-color: purple; }
+  #comments .comment-form-comment {
+    background-color: yellow; }
+    #comments .comment-form-comment textarea {
+      background-color: blue; }
+  #comments p .logged-in-as {
+    color: black;
+    text-decoration: none; }
+
 #nav-below {
   outline: 2px red solid; }

@@ -34,8 +34,45 @@ $font-color: rgba(122, 122, 122, 1.0);
 //-----------------------------------------comments
 //see comments.php
 #comments {
+  outline: green 2px solid;
 
+  #comments-list {
+    color: red;
+
+    //h3
+    .comments-title {
+      font-size: 3em;
+    }
+    // #comments-nav-above {
+    //   color: black;
+    //   text-decoration: none;
+    // }
+    ul {
+      background-color: purple;
+    }
+    // #comments-nav-above {
+    //   color: black;
+    //   text-decoration: none;
+    //   outline: blue 2px solid;
+    // }
+
+  }
+  // #trackbacks-list {
+  //   outline: yellow 2px solid;
+  // }
+  .comment-form-comment {
+     background-color: yellow;
+
+    textarea {
+      background-color: blue;
+    }
+  }
+  p .logged-in-as {
+    color: black;
+    text-decoration: none;
+  }
 }
+
 //see nav-below-single.php and nav-below.php
 #nav-below {
   outline: 2px red solid;
