@@ -4,6 +4,7 @@
 @import 'header';
 @import 'main-content';
 @import 'sidebar';
+@import 'footer';
 
 $header-font: 'Lato', sans-serif;
 $secondary-color: rgba(237, 237, 238, 1.0);
@@ -26,18 +27,9 @@ $font-color: rgba(122, 122, 122, 1.0);
 
 
 
-//---------------------------------------------FOOTER
-//see footer.php, single.php
-// .footer {
 
-  #copyright {
-    // background-color: green;
-    clear: both;
-  }
-// }
-.footer {
 
-}
+
 
 //-----------------------------------------comments
 //see comments.php
