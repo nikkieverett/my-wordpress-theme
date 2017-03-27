@@ -228,20 +228,83 @@ aside {
   max-width: 70%; }
 
 #comments {
-  outline: green 2px solid; }
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin-top: 160px; }
   #comments #comments-list {
-    color: red; }
+    overflow: auto;
+    border-bottom: 1px solid #ededee; }
     #comments #comments-list .comments-title {
-      font-size: 3em; }
-    #comments #comments-list ul {
-      background-color: purple; }
-  #comments .comment-form-comment {
-    background-color: yellow; }
-    #comments .comment-form-comment textarea {
-      background-color: blue; }
-  #comments p .logged-in-as {
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      margin-bottom: 40px;
+      border-bottom: 1px #ededee solid;
+      overflow: auto;
+      padding-bottom: 10px; }
+    #comments #comments-list .comment-body {
+      line-height: 1.7em; }
+      #comments #comments-list .comment-body img {
+        float: left;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 15px; }
+      #comments #comments-list .comment-body a {
+        text-transform: uppercase;
+        color: black;
+        text-decoration: none;
+        background-color: #ededee;
+        font-weight: 400; }
+      #comments #comments-list .comment-body .comment-author {
+        margin-top: 10px; }
+      #comments #comments-list .comment-body .comment-meta {
+        margin-top: 10px;
+        margin-bottom: 50px; }
+      #comments #comments-list .comment-body .reply a {
+        width: 70px;
+        float: right;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        letter-spacing: .2em;
+        text-align: center;
+        font-weight: 300; }
+  #comments #reply-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-top: 30px;
+    margin-bottom: 15px; }
+  #comments .comment-form-comment textarea {
+    width: 475px;
+    margin-top: 15px;
+    height: 300px;
+    border: 1px solid #ededee; }
+  #comments .logged-in-as a {
+    text-transform: uppercase;
     color: black;
-    text-decoration: none; }
+    text-decoration: none;
+    background-color: #ededee;
+    font-weight: 400;
+    margin-right: 10px; }
+  #comments .submit {
+    border-radius: none;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    letter-spacing: .2em;
+    background-color: #ededee;
+    font-weight: 300;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none; }
 
-#nav-below {
-  outline: 2px red solid; }
+#nav-below a {
+  margin-top: 30px;
+  font-family: "Lato", sans-serif;
+  color: black;
+  text-decoration: none; }
+  #nav-below a .nav-previous {
+    float: left; }
+  #nav-below a .nav-next {
+    float: right; }

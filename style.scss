@@ -24,63 +24,114 @@ $font-color: rgba(122, 122, 122, 1.0);
   // overflow: auto;
 }
 
-
-
-
-
-
-
-
 //-----------------------------------------comments
 //see comments.php
 #comments {
-  outline: green 2px solid;
+  font-family: $header-font;
+  font-weight: 300;
+  margin-top: 160px;
 
   #comments-list {
-    color: red;
+    overflow: auto;
+    border-bottom: 1px solid $secondary-color;
 
-    //h3
     .comments-title {
-      font-size: 3em;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      margin-bottom: 40px;
+      border-bottom: 1px $secondary-color solid;
+      overflow: auto;
+      padding-bottom: 10px;
     }
-    // #comments-nav-above {
-    //   color: black;
-    //   text-decoration: none;
-    // }
-    ul {
-      background-color: purple;
-    }
-    // #comments-nav-above {
-    //   color: black;
-    //   text-decoration: none;
-    //   outline: blue 2px solid;
-    // }
+    .comment-body {
+      line-height: 1.7em;
 
+      img {
+        float: left;
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      a {
+        text-transform: uppercase;
+        color: black;
+        text-decoration: none;
+        background-color: $secondary-color;
+        font-weight: 400;
+
+      }
+      .comment-author {
+        margin-top: 10px;
+      }
+      .comment-meta {
+        margin-top: 10px;
+        margin-bottom: 50px;
+      }
+      .reply a {
+        width: 70px;
+        float: right;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        letter-spacing: .2em;
+        text-align: center;
+        font-weight: 300;
+      }
+    }
   }
-  // #trackbacks-list {
-  //   outline: yellow 2px solid;
-  // }
+  #reply-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
   .comment-form-comment {
-     background-color: yellow;
 
     textarea {
-      background-color: blue;
+     width: 475px;
+     margin-top: 15px;
+     height: 300px;
+     border: 1px solid $secondary-color;
     }
   }
-  p .logged-in-as {
+  .logged-in-as a {
+    text-transform: uppercase;
     color: black;
     text-decoration: none;
+    background-color: $secondary-color;
+    font-weight: 400;
+    margin-right: 10px;
+  }
+  .submit {
+    border-radius: none;
+    text-transform: uppercase;
+    font-family: $header-font;
+    text-align: center;
+    letter-spacing: .2em;
+    background-color: $secondary-color;
+    font-weight: 300;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
   }
 }
-
 //see nav-below-single.php and nav-below.php
-#nav-below {
-  outline: 2px red solid;
+#nav-below a {
+  margin-top: 30px;
+  font-family: $header-font;
+  color: black;
+  text-decoration: none;
+
 
   .nav-previous {
+    float: left;
 
   }
   .nav-next {
+    float: right;
 
   }
 }
